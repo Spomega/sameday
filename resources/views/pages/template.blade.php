@@ -188,10 +188,10 @@
 												<span class="footer__name">Phone:</span>
 												<span class="footer__text">+ 233261777441</span>
 											</div>
-											<div class="footer__item">
+<!--											<div class="footer__item">
 												<span class="footer__name">Fax:</span>
 												<span class="footer__text">+ 233261777441</span>
-											</div>
+											</div>-->
 											<div class="footer__item">
 												<span class="footer__name">email:</span>
 												<span class="footer__text">info@samedayautoshipping.com</span>
