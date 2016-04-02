@@ -19,6 +19,7 @@ Route::get('sameday/addcar','CarController@index');
 Route::post('sameday/addcar','CarController@store');
 Route::get('sameday/viewcar','CarController@viewcars');
 Route::get('sameday/deletecar/{id}','CarController@delete');
+Route::get('sameday/listings','CarController@listing');
 
 /*
 |--------------------------------------------------------------------------

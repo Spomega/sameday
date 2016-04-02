@@ -42,6 +42,13 @@ class CarController extends Controller
     }
     
     
+     public function listing()
+    {
+        $cars = $this->car->all();
+       return view('pages.listings',  compact('cars'));
+       
+    }
+    
     /**
      * Store a newly created resource in storage.
      *
