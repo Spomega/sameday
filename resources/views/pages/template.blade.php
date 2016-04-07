@@ -20,8 +20,9 @@
 		<link href="assets/plugins/switcher/css/color4.css" rel="alternate stylesheet" title="color4" media="all">
 		<link href="assets/plugins/switcher/css/color5.css" rel="alternate stylesheet" title="color5" media="all">-->
 
+                    {!! HTML::script('assets/plugins/jquery/jquery-1.11.1.min.js') !!}
 <!--		<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>-->
-                {!! HTML::script('assets/plugins/jquery/jquery-1.11.1.min.js') !!}
+               
                 
    
 
@@ -106,9 +107,9 @@
                   <a href="javascript:void(0);" class="navbar-brand"></a> </div>
                 <div id="navbar-collapse-1" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="vehicle-listings.html">VEHICLE LISTINGS</a> </li>
-                    <li><a href="car-details.html">CAR DETAILS</a></li>
+                    <li><a href="{{url('sameday/listings')}}">HOME</a></li>
+<!--                    <li><a href="vehicle-listings.html">VEHICLE LISTINGS</a> </li>-->
+<!--                    <li><a href="car-details.html">CAR DETAILS</a></li>-->
 <!--                    <li class="dropdown" ><a href="news.html">NEWS</a>
                       <ul  class="dropdown-menu">
                         <li> <a href="news-grid.html">DROPDOWN</a> </li>
@@ -124,8 +125,7 @@
           </div>
         </div>
         <!-- end container --> 
-      </div><!-- end header__inner -->
-				</div><!-- end header -->
+      </div><!-- end header__inner --> </div><!-- end header -->
 
 				<div class="block-title">
 					<div class="block-title__inner section-bg section-bg_second">
@@ -142,24 +142,25 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-8">
 							<main class="main-content">
 
                                                         @yield('main')
 						
 							</main><!-- end main-content -->
 						</div><!-- end col -->
+                                                
+                                                <div class="col-md-4">
+                                                    <aside class="sidebar">
+                                                        @yield('side')	
+
+                                                    </aside>
+                                                </div><!-- end col -->
 
 
-						<div class="col-md-3">
-							<aside class="sidebar">
-								
-
-							@yield('side')	
-
-							</aside>
-						</div><!-- end col -->
 					</div><!-- end row -->
+                                        
+					
 				</div><!-- end container -->
 
 
@@ -232,6 +233,7 @@
 		
 
                 <!-- SCRIPTS -->
+               
                 {!! HTML::script('assets/js/jquery-migrate-1.2.1.js') !!}
                 {!! HTML::script('assets/plugins/bootstrap/js/bootstrap.min.js') !!}
                 {!! HTML::script('assets/js/modernizr.custom.js') !!}
@@ -241,6 +243,8 @@
                 {!! HTML::script('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js') !!}
                 {!! HTML::script('assets/plugins/jelect/jquery.jelect.js') !!}
                 {!! HTML::script('assets/plugins/nouislider/jquery.nouislider.all.min.js') !!}
+                {!! HTML::script('assets/plugins/flexslider/jquery.flexslider.js') !!}
+                
 <!--                <script src="assets/js/jquery-migrate-1.2.1.js"></script>
                 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
                 <script src="assets/js/modernizr.custom.js"></script>
@@ -249,7 +253,9 @@
                 <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
                 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
                 <script src="assets/plugins/jelect/jquery.jelect.js"></script>
-                <script src="assets/plugins/nouislider/jquery.nouislider.all.min.js"></script>-->
+                <script src="assets/plugins/nouislider/jquery.nouislider.all.min.js"></script>
+                <script src="assets/plugins/flexslider/jquery.flexslider.js"></script>
+                -->
 
 
                 <!--THEME-->

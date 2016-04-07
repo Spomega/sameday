@@ -43,11 +43,10 @@
              <article class="card clearfix">
                  <div class="card__img">
 <!--                     <img class="img-responsive" src="" height="196" width="235" alt="foto">-->
-                     <a href="#">{!! HTML::image($car->image1,"foto",array('class'=>'img-responsive','height'=>'196','width'=>'235')) !!}</a>
+                     <a href="{{url('/sameday/cardetail')}}/{{$car->id}}">{!! HTML::image($car->image1,"foto",array('class'=>'img-responsive','height'=>'196','width'=>'235')) !!}</a>
                  </div>
                  <div class="card__inner">
-                     <a href="#"><h2 class="card__title ui-title-inner">{{$car->carmake}}</h2></a>
-                     <div class="decor-1"></div>
+                     <a href="{{url('/sameday/cardetail')}}/{{$car->id}}"><h2 class="card__title ui-title-inner">{{$car->carmake}}</h2></a>
                      <div class="card__description">
                          <p>In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate and the Silverado ...</p>
                      </div>

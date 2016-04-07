@@ -42,12 +42,21 @@ class CarController extends Controller
     }
     
     
+     public function details($id)
+    {
+        $car =  Car::find($id);
+        return view('pages.cardetails',  compact('car'));
+       
+    }
+    
+    
      public function listing()
     {
         $cars = $this->car->all();
        return view('pages.listings',  compact('cars'));
        
     }
+    
     
     /**
      * Store a newly created resource in storage.
@@ -74,6 +83,7 @@ class CarController extends Controller
          
          
                // upload the image1 //
+       
       $file = $request->file('image1');
       $destination_path =  'localhost:8000'.'/public/images/cars/';
       $filename = str_random(6).'_'.$file->getClientOriginalName();
