@@ -84,13 +84,13 @@
 										<span class="header-contacts__item"><i class="icon fa fa-phone"></i>+ 233261777441</span>
 										<a class="header-contacts__item" href="mailto:info@samedayautoshipping.com"><i class="icon fa fa-envelope"></i>info@samedayautoshipping.com</a>
 									</div>
-									<ul class="social-links list-inline">
+<!--									<ul class="social-links list-inline">
 										<li><a class="icon fa fa-facebook" href="javascript:void(0);"></a></li>
 										<li><a class="icon fa fa-twitter" href="javascript:void(0);"></a></li>
 										<li><a class="icon fa fa-youtube-play" href="javascript:void(0);"></a></li>
 										<li><a class="icon fa fa-instagram" href="javascript:void(0);"></a></li>
 										<li><a class="icon fa fa-google-plus" href="javascript:void(0);"></a></li>
-									</ul>
+									</ul>-->
 								</div><!-- end col -->
 							</div><!-- end row -->
 						</div><!-- end container -->
@@ -142,7 +142,7 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-9">
 							<main class="main-content">
 
                                                         @yield('main')
@@ -150,7 +150,7 @@
 							</main><!-- end main-content -->
 						</div><!-- end col -->
                                                 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <aside class="sidebar">
                                                         @yield('side')	
 
@@ -180,7 +180,7 @@
 									<div class="row">
 										<div class="col-xs-12">
 											<div class="footer__name">: SHOWROOM LOCATION :</div>
-											<div class="footer__text">Tema</div>
+											<div class="footer__text">Tema,Community 5</div>
 										</div><!-- end col -->
 									</div><!-- end row -->
 									<div class="row">
@@ -199,7 +199,7 @@
 											</div>
 											<div class="footer__item">
 												<span class="footer__name">Hours:</span>
-												<span class="footer__text">Mon - Fri :: 9am - 6pm</span>
+												<span class="footer__text">Mon - Fri :: 8am - 5pm</span>
 											</div>
 										</div><!-- end col -->
 <!--									</div> end row 

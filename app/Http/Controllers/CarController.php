@@ -79,7 +79,8 @@ class CarController extends Controller
          $car->transmission = $request->input('transmission');
          $car->fuel = $request->input('fuel');
          $car->damage = $request->input('damage');
-         $car->status = $request->input('status');
+         $car->status = $request->input('category');
+         $car->condition = $request->input('condition');
          
          
                // upload the image1 //
@@ -154,4 +155,44 @@ class CarController extends Controller
     }
     
     
+    public function update(Request $request,$id) {
+        
+        
+        if(isset($id))
+        {
+          $car = Car::find($id);
+            
+         $car->vinnumber = $request->input('vinnumber');
+         $car->carmake = $request->input('carmake');
+         $car->caryear = $request->input('caryear');
+         $car->price = $request->input('price');
+         $car->color = $request->input('color');
+         $car->milleage = $request->input('milleage');
+         $car->vehicletype = $request->input('vehicletype');
+         $car->enginetype = $request->input('enginetype');
+         $car->transmission = $request->input('transmission');
+         $car->fuel = $request->input('fuel');
+         $car->damage = $request->input('damage');
+         $car->status = $request->input('category');
+         
+         
+         
+//         if ( $request->hasfile('image1')){
+//             
+//              $file = $request->file('image1');
+//                $destination_path = 'localhost:8000' . '/public/images/cars/';
+//                $filename = str_random(6) . '_' . $file->getClientOriginalName();
+//                $file->move($destination_path, $filename);
+//
+//                // save image data into database //
+//                $car->image1 = $destination_path . $filename;
+//            }
+         
+         
+         
+            
+        }
+        
+    }
+
 }

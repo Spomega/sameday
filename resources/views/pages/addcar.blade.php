@@ -103,10 +103,19 @@
                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                     </div>
                 </div>
+        <div class="form-group">
+            
+                    <label for="Condition"></label>
+                    <select class="form-control" name="condition" id="condition">
+                        <option value="1">New</option>
+                        <option value="2">Used</option>
+                    </select>
+                    <label></label>
+            </div>
                 <div class="form-group">
             
                    <label for="Status">Status</label>
-                    <select class="form-control" name="category">
+                    <select class="form-control" name="category" id="category">
                         <option value="1">Active</option>
                         <option value="2">Inactive</option>
                     </select>

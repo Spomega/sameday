@@ -48,33 +48,35 @@
                  <div class="card__inner">
                      <a href="{{url('/sameday/cardetail')}}/{{$car->id}}"><h2 class="card__title ui-title-inner">{{$car->carmake}}</h2></a>
                      <div class="card__description">
-                         <p>In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate and the Silverado ...</p>
+                         <p>{{$car->vehicletype}}</p>
                      </div>
                      <ul class="card__list list-unstyled">
                          <li class="card-list__row">
-                             <span class="card-list__title">Body Style:</span>
-                             <span class="card-list__info">Sedan</span>
+                             <span class="card-list__title">Vin Number:</span>
+                             <span class="card-list__info">{{$car->vinnumber}}</span>
                          </li>
-<!--                         <li class="card-list__row">
-                             <span class="card-list__title">Engine:</span>
-                             <span class="card-list__info">{{$car->enginetype}}</span>
-                         </li>-->
+                         
                          <li class="card-list__row">
                              <span class="card-list__title">Mileage:</span>
-                             <span class="card-list__info">{{$car->milleage}}KM</span>
+                             <span class="card-list__info">{{$car->milleage}}</span>
+                         </li>
+                          <li class="card-list__row">
+                             <span class="card-list__title">Fuel</span>
+                             <span class="card-list__info">{{$car->fuel}}</span>
                          </li>
                          <li class="card-list__row">
                              <span class="card-list__title">Color:</span>
                              <span class="card-list__info">{{$car->color}}</span>
                          </li>
                          <li class="card-list__row">
+                             <span class="card-list__title">Engine:</span>
+                             <span class="card-list__info">{{$car->enginetype}}</span>
+                         </li>
+                         <li class="card-list__row">
                              <span class="card-list__title">Transmission:</span>
                              <span class="card-list__info">{{$car->transmission}}</span>
                          </li>
-                         <li class="card-list__row">
-                             <span class="card-list__title">Specs</span>
-                             <span class="card-list__info">2-Passenger, 2-Door</span>
-                         </li>
+                        
                      </ul>
                      <div class="card__price">PRICE:<span class="card__price-number">${{$car->price}}</span></div>
                  </div>
