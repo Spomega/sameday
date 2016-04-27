@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('/','CarController@listing');
 Route::get('sameday/addcar','CarController@index');
 Route::post('sameday/addcar','CarController@store');
 Route::get('sameday/viewcar','CarController@viewcars');

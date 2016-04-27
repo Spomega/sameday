@@ -29,12 +29,22 @@
    
                 
                 @yield('head')
-	
+	 
 	</head>
 
 
 	<body>
     
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76777227-1', 'auto');
+  ga('send', 'pageview');
+
+            </script>
     <!-- Loader -->
 <div id="page-preloader"><span class="spinner"></span></div>
 <!-- Loader end -->
@@ -100,7 +110,10 @@
 					<div class="header__inner">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-xs-12"> <a href="index.html" class="logo"> <img class="logo__img img-responsive" src="assets/img/logo.png" height="50" width="111" alt="Logo"> </a>
+            <div class="col-md-12 col-xs-12"> <a href="{{url('sameday/listings')}}" class="logo"> 
+<!--                    <img class="logo__img img-responsive" src="assets/img/logo1.png" height="120" width="120" alt="Logo">-->
+                      {!! HTML::image("assets/img/logo2.png","logo",array('class'=>'logo__img img-responsive','height'=>'120','width'=>'120')) !!}
+                </a>
               <div class="navbar yamm">
                 <div class="navbar-header hidden-md hidden-lg hidden-sm">
                   <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>

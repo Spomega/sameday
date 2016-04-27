@@ -89,8 +89,8 @@
             <dd>{{$car->vehicletype}}</dd>
             <dt>ENGINE TYPE:</dt>
             <dd>{{$car->enginetype}}</dd>
-            <dt>VIN NUMBER:</dt>
-            <dd>{{$car->vinnumber}}</dd>
+            <dt>LOT NUMBER:</dt>
+            <dd>{{$car->lotnumber}}</dd>
             <dt>TRANSMISSION:</dt>
             <dd>{{$car->transmission}}</dd>
             <dt>FUEL ECONOMY:</dt>

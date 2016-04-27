@@ -7,7 +7,7 @@
 @section('main')
 
 
-            <div class="sorting">
+<!--            <div class="sorting">
                 <div class="sorting__inner">
                     <div class="sorting__item">
                         <span class="sorting__title">select View</span>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div> -->
             
              @foreach ($cars as $car)
             
@@ -52,8 +52,8 @@
                      </div>
                      <ul class="card__list list-unstyled">
                          <li class="card-list__row">
-                             <span class="card-list__title">Vin Number:</span>
-                             <span class="card-list__info">{{$car->vinnumber}}</span>
+                             <span class="card-list__title">Lot Number:</span>
+                             <span class="card-list__info">{{$car->lotnumber}}</span>
                          </li>
                          
                          <li class="card-list__row">

@@ -81,6 +81,7 @@ class CarController extends Controller
          $car->damage = $request->input('damage');
          $car->status = $request->input('category');
          $car->condition = $request->input('condition');
+         $car->lotnumber = $request->input('lotnumber');
          
          
                // upload the image1 //
