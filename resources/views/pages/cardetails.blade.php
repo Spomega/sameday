@@ -27,17 +27,17 @@
                 </a>
             </li>
             <li>
-                <a href="{{$car->image3}}" >
+                <a href="{{url($car->image3)}}" >
                     {!! HTML::image($car->image3,"foto",array('class'=>'img-responsive','height'=>'430','width'=>'770')) !!}
                 </a>
             </li>
             <li>
-                <a href="{{$car->image4}}" >
+                <a href="{{url($car->image4)}}" >
                    {!! HTML::image($car->image4,"foto",array('class'=>'img-responsive','height'=>'430','width'=>'770')) !!}
                 </a>
             </li>
             <li>
-                <a href="{{$car->image5}}" >
+                <a href="{{url($car->image5)}}" >
                    {!! HTML::image($car->image5,"foto",array('class'=>'img-responsive','height'=>'430','width'=>'770')) !!}
                 </a>
                 

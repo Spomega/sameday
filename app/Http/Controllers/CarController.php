@@ -37,7 +37,8 @@ class CarController extends Controller
     
     public function viewcars()
     {
-        $cars = $this->car->all();
+       // $cars = $this->car->all();
+        $cars = Car::orderBy('created_at', 'desc')->get();
         return view('pages.viewcar',  compact('cars'));
     }
     
@@ -52,7 +53,8 @@ class CarController extends Controller
     
      public function listing()
     {
-        $cars = $this->car->all();
+        //$cars = $this->car->all();
+       $cars = Car::orderBy('created_at', 'desc')->get();
        return view('pages.listings',  compact('cars'));
        
     }

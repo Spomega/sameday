@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+                <meta name="Description" content="We pride ourselves in getting you quality and affordable cars.Just find the car you                      like on our site and call us.We will get it for you ">
+
+               <meta name="Keywords" content="Sameday,Autoshipping,Auto,Cars,Shipping,Car company">
 		<title>Same Day Auto Shipping</title>
 		<link href="favicon.png" type="image/x-icon" rel="shortcut icon">
                  {!! HTML::style('assets/css/master.css')  !!}
@@ -35,7 +39,7 @@
 
 	<body>
     
-            <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -44,7 +48,7 @@
   ga('create', 'UA-76777227-1', 'auto');
   ga('send', 'pageview');
 
-            </script>
+</script>
     <!-- Loader -->
 <div id="page-preloader"><span class="spinner"></span></div>
 <!-- Loader end -->
@@ -91,7 +95,8 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<div class="header-contacts">
-										<span class="header-contacts__item"><i class="icon fa fa-phone"></i>+ 233261777441</span>
+                                                                            <span class="header-contacts__item"><i class="icon fa fa-phone"></i><img src="assets/img/gh.png" />+ 233261777441</span>
+                                                                             <span class="header-contacts__item"><i class="icon fa fa-phone"></i><img src="assets/img/us.png" />+1(973)393-0316</span>
 										<a class="header-contacts__item" href="mailto:info@samedayautoshipping.com"><i class="icon fa fa-envelope"></i>info@samedayautoshipping.com</a>
 									</div>
 <!--									<ul class="social-links list-inline">
@@ -201,6 +206,7 @@
 											<div class="footer__item">
 												<span class="footer__name">Phone:</span>
 												<span class="footer__text">+ 233261777441</span>
+                                                                                                <span class="footer__text">+ 1(973)393-0316</span>
 											</div>
 <!--											<div class="footer__item">
 												<span class="footer__name">Fax:</span>
