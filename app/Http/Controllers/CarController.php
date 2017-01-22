@@ -34,6 +34,10 @@ class CarController extends Controller
 	  return view('pages.addcar');
     }
     
+     public function offers()
+    {
+	  return view('pages.details');
+    }
     
     public function viewcars()
     {

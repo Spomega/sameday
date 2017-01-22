@@ -33,6 +33,7 @@ class CreateCarTable extends Migration
             $table->string('image4');
             $table->string('image5'); 
             $table->string('status');
+            $table->string('sold');
             $table->timestamps();
          });
     }

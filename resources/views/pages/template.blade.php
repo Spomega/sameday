@@ -95,8 +95,8 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<div class="header-contacts">
-                                                                            <span class="header-contacts__item"><i class="icon fa fa-phone"></i><img src="assets/img/gh.png" />+ 233261777441</span>
-                                                                             <span class="header-contacts__item"><i class="icon fa fa-phone"></i><img src="assets/img/us.png" />+1(973)393-0316</span>
+                                                                            <span class="header-contacts__item"><i class="icon fa fa-phone"></i>{!! HTML::image("assets/img/gh.png","flag") !!}+ 233261777441</span>
+                                                                             <span class="header-contacts__item"><i class="icon fa fa-phone"></i>{!! HTML::image("assets/img/us.png","flag") !!}+1(973)393-0316</span>
 										<a class="header-contacts__item" href="mailto:info@samedayautoshipping.com"><i class="icon fa fa-envelope"></i>info@samedayautoshipping.com</a>
 									</div>
 <!--									<ul class="social-links list-inline">
@@ -126,7 +126,7 @@
                 <div id="navbar-collapse-1" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
                     <li><a href="{{url('sameday/listings')}}">HOME</a></li>
-<!--                    <li><a href="vehicle-listings.html">VEHICLE LISTINGS</a> </li>-->
+                   <li><a href="{{url('sameday/details')}}">OUR DEALS</a> </li>
 <!--                    <li><a href="car-details.html">CAR DETAILS</a></li>-->
 <!--                    <li class="dropdown" ><a href="news.html">NEWS</a>
                       <ul  class="dropdown-menu">

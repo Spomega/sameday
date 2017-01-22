@@ -76,7 +76,12 @@
                              <span class="card-list__title">Transmission:</span>
                              <span class="card-list__info">{{$car->transmission}}</span>
                          </li>
-                        
+                         
+                         @if($car->sold =='1') 
+                        <li class="card-list__row">
+                              <img src="assets/img/sold.gif" alt="This listing has been sold.">
+                         </li>
+                         @endif
                      </ul>
                      <div class="card__price">PRICE:<span class="card__price-number">${{$car->price}}</span></div>
                  </div>
